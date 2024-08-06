@@ -24,14 +24,13 @@ class ChatUI
         const when = dateFns.formatDistanceToNowStrict(
             data.created_at.toDate(),
             {addSuffix:true}
-        )
-        const dataUsername = data.username;
-        const dataMessage = data.message;
+        );
+        
         const html = 
         `
             <li class="list-group-item">
-                <span class="thicc-text username">${escapeHtml(dataUsername)}</span>
-                <span class="overflow-hidden message">${escapeHtml(dataMessage)}</span>
+                <span class="thicc-text username">${escapeHtml(data.username)}</span>
+                <span class="overflow-hidden message">${escapeHtml(data.message)}</span>
                 <div class="smolPP-text time">${when}</div>
             </li>
         `;
