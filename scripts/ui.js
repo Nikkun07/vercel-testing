@@ -20,7 +20,7 @@ class ChatUI
         `
             <li class="list-group-item">
                 <span class="thicc-text username">${data.username}</span>
-                <span class="message">${data.message}</span>
+                <span class="overflow-hidden message">${data.message}</span>
                 <div class="smolPP-text time">${when}</div>
             </li>
         `;
