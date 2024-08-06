@@ -1,0 +1,40 @@
+body
+{
+    background: #687387;
+}
+.container
+{
+    max-width: 600px;
+    background: #687387;
+}
+.btn
+{
+    background: orange;
+    color: white;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn:focus
+{
+    outline:none !important;
+}
+
+.thicc-text
+{
+    font-weight: bold;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.smolPP-text
+{
+    font-weight: thin;
+    color: gray;
+    font-size: 0.675em
+}
+
+.update-msg
+{
+    text-align: center;
+    margin: 20px auto;
+}
