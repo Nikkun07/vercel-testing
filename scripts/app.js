@@ -29,7 +29,7 @@ rooms.addEventListener('click', e =>
 newChatForm.addEventListener('submit', e =>
 {
     e.preventDefault();
-    const msg = newChatForm.message.value.trim().toString();
+    const msg = newChatForm.message.value.trim();
     chatroom.addChat(msg)
         .then(() => newChatForm.reset())
         .catch(err => console.log(err));
