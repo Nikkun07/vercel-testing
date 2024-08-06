@@ -12,7 +12,7 @@ class ChatUI
 
     render(data)
     {
-        const when = dateFns.distanceInWordsToNow(
+        const when = dateFns.formatDistanceToNowStrict(
             data.created_at.toDate(),
             {addSuffix:true}
         )
