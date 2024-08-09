@@ -29,6 +29,7 @@ rooms.addEventListener('click', e =>
 newChatForm.addEventListener('submit', e =>
 {
     e.preventDefault();
+    //Add RegEx somehere here
     const msg = newChatForm.message.value.trim();
     chatroom.addChat(msg)
         .then(() => newChatForm.reset())
@@ -40,6 +41,7 @@ newNameForm.addEventListener('submit', e =>
 {
     e.preventDefault();
     //Update Name
+    //Add RegEx somewhere here
     const newName = newNameForm.name.value.trim();
     chatroom.updateName(newName);
 

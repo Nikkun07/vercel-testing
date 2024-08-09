@@ -2,4 +2,12 @@
 
 //Setup Scrollable Overflow (RESOLVED)
 
-? //Authentication (?)
+//Username Regular Expression Testing
+
+//Max Username Length
+
+//Max Message Length
+
+//Add Character Limit Counter (n/500)
+
+//Authentication (?)
