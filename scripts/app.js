@@ -29,8 +29,25 @@ rooms.addEventListener('click', e =>
 newChatForm.addEventListener('submit', e =>
 {
     e.preventDefault();
-    //Add RegEx somehere here
+
     const msg = newChatForm.message.value.trim();
+
+    //Add RegEx somehere here
+
+    /* 
+    const messageCheck = //regular Expression;
+
+    if(messageCheck.test(msg))
+    {
+        console.log("Valid Input"); //Make this into something that will show in the DOM maybe?
+    }
+    else
+    {
+        console.log("Invalid Input"); //Make this into something that will show in the DOM. (Red border + Small red text)
+    }
+    */
+
+    //Add This inside the RegEx check
     chatroom.addChat(msg)
         .then(() => newChatForm.reset())
         .catch(err => console.log(err));
@@ -41,16 +58,29 @@ newNameForm.addEventListener('submit', e =>
 {
     e.preventDefault();
     //Update Name
-    //Add RegEx somewhere here
-    const newName = newNameForm.name.value.trim();
-    chatroom.updateName(newName);
 
+    //Add RegEx somehere here
+    const newName = newNameForm.name.value.trim();
+    /* 
+    const nameCheck = //regular Expression;
+
+    if(nameCheck.test(newName))
+    {
+        console.log("Valid Input"); //Make this into something that will show in the DOM maybe?
+    }
+    else
+    {
+        console.log("Invalid Input"); //Make this into something that will show in the DOM. (Red border + Small red text)
+    }
+    */
+    
+
+    //Add all of these under the RegEx Test
+    chatroom.updateName(newName);
     //Reset Form
     newNameForm.reset();
-
     //Display/Hide Update Message
     updateMsg.innerText = `Your name is updated to ${newName}.`;
-    
     setTimeout(() => updateMsg.innerText = '', 3000);
 });
 
