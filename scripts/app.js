@@ -60,15 +60,16 @@ newNameForm.addEventListener('submit', e =>
     e.preventDefault();
     //Update Name
 
-    //Add RegEx somehere here
+    //Add RegEx Check somehere here
     const newName = newNameForm.name.value.trim();
     
     const nameCheck = /^[\w\-\s]+$/;
 
     if(nameCheck.test(newName))
     {
-        console.log("Valid Input"); //Make this into something that will show in the DOM maybe?
+        console.log("Valid Input"); //Make this into something that will show in the DOM maybe? (Red border + Small red text)
         chatroom.updateName(newName);
+
         //Reset Form
         newNameForm.reset();
         //Display/Hide Update Message
@@ -77,7 +78,8 @@ newNameForm.addEventListener('submit', e =>
     }
     else
     {
-        console.log("Invalid Input"); //Make this into something that will show in the DOM. (Red border + Small red text)
+        console.log("Invalid Input");
+        //Insert DOM Change Here
     }
    
 });
